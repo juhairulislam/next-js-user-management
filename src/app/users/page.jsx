@@ -5,7 +5,7 @@ const UsersPage =async  () => {
     const res =await fetch('http://localhost:8000/users') ;
     const users = await res.json() ;
 
-    console.log(users) ;
+    // console.log(users) ;
 
     return (
         <div className='p-10'>
