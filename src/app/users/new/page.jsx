@@ -18,6 +18,12 @@ const NewUserPage = () => {
 
     const onSubmit = (e) =>{
         e.preventDefault() ;
+
+        const formData = new FormData(event.target) 
+
+        const newUsers = Object.fromEntries(formData.entries()) ;
+
+        console.log('new User Data' , newUsers)
     }
 
     return (
